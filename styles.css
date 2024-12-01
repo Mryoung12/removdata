@@ -1,0 +1,379 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url('https://i.pinimg.com/736x/14/1f/01/141f014fc3a2ff36dad19977214f5a5f.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  height: 100vh;
+  /* Ensure body takes full height */
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+
+
+
+  
+}
+
+
+
+#headerImage {
+  width: 100%;
+  height: 150px;
+  margin-top: 15px;
+  object-fit: contain;
+  /* Ensures the image fills the header image properly */
+}
+
+#full-name,
+#reg-number,
+#profile-code,
+#exam-town-code {
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+#name,
+#registrationNumber,
+#profileCode,
+#examTownCode {
+  font-size: 12px;
+  padding: 16px;
+  text-align: center;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-left: -29px;
+
+
+}
+
+#flex-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+
+/* Container for the content */
+#registrationWrapper {
+  width: 90%;
+  /* Use 90% of the screen width */
+  max-width: 1200px;
+  /* Maximum width for large screens */
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+
+  box-sizing: border-box;
+  /* Include padding in width */
+}
+
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #00ff00;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #00ff00;
+  border-bottom: 2px solid #00ff00;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Label Styling */
+label {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #ffffff
+}
+
+/* Input and Select Styling */
+input[type="text"],
+input[type="file"],
+select {
+  padding: 10px;
+  border: 2px solid #00ff00;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  font-size: 16px;
+  background-color: #000;
+  color: #fff;
+  outline: none;
+}
+
+input[type="text"]:focus,
+input[type="file"]:focus,
+select:focus {
+  border-color: #ff4500;
+  box-shadow: 0 0 15px rgba(255, 69, 0, 0.8);
+}
+
+
+/* Passport Box Styling */
+.passport-box {
+  width: 150px;
+  /* Set width for the box */
+  height: 150px;
+  /* Set height for the box */
+  border: 2px dashed #00ff00;
+  /* Green dashed border around the box */
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Dark background to highlight image */
+  display: flex;
+  justify-content: center;
+  /* Horizontally center image */
+  align-items: center;
+  /* Vertically center image */
+  overflow: hidden;
+  /* Hide parts of the image that overflow the box */
+  margin-top: 10px;
+  margin-left: 100px;
+  /* Space above the box */
+  margin-bottom: 10px;
+  /* Space below the box */
+}
+
+/* Passport Preview Image Styling */
+#passportPreview {
+  width: 100%;
+  /* Make the image take the full width of the box */
+  height: 100%;
+  /* Ensure the image fills the box's height */
+  object-fit: cover;
+  /* Ensure image fits properly inside the box */
+  display: none;
+  /* Initially hide the image preview */
+}
+
+#passport {
+  display: flex;
+  margin-left: 7px;
+  font-size: 12px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+/* Assistance Package Section */
+#gender {
+  color: black;
+
+}
+
+#assiDiv select {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+
+}
+
+/* Score Section */
+#scoreDiv {
+  margin-bottom: 20px;
+}
+
+#scoreDiv input {
+  width: 94%;
+  color: #000;
+  font-size: 22px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+}
+
+#assistance,
+#my-score,
+#my-department {
+  font-size: 20px;
+  display: flex;
+  margin-top: 10px;
+}
+
+/* Department and Course Section */
+#depDiv {
+  margin-bottom: 20px;
+}
+
+#depDiv select {
+  width: 100%;
+  color: #000;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Course Options Based on Department */
+#science-courses,
+#commercial-courses,
+#art-courses {
+  display: none;
+  /* Hide by default, shown when applicable */
+}
+
+#science-courses select,
+#commercial-courses select,
+#art-courses select {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+#science-courses {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+/* Subject Combinations Section */
+#subject-combinations {
+  font-size: 1.1em;
+  color: white;
+  padding: 10px;
+  background-color: #6f6565;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+#subject-one {
+  text-transform: uppercase;
+  color: #4CAF50;
+  font-weight: 800;
+  text-shadow: inherit;
+}
+
+#subject-combinations select {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+/* Submit Button Styling */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  font-size: 22px;
+  margin-left: 75px;
+  border: none;
+  margin-top: 10px;
+  width: 60%;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #025106;
+}
+
+/* Error Messages */
+.form-error {
+  color: red;
+  font-size: 1em;
+  margin-top: 10px;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  #registrationWrapper {
+    padding: 9px;
+    margin: 10px auto;
+  }
+
+  /* Form Inputs and Labels */
+  input[type="text"],
+  input[type="file"],
+  select {
+    font-size: 14px;
+  }
+
+  /* Adjust Heading Sizes */
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #headerImage {
+    position: relative;
+    /* Ensures normal document flow */
+    margin-top: 0;
+  }
+
+  /* Ensure Proper Layout on Large Screens */
+  @media (min-width: 1200px) {
+    #registrationWrapper {
+      padding: 30px;
+      margin: 40px auto;
+    }
+
+    h1 {
+      font-size: 2.5em;
+    }
+
+    h3 {
+      font-size: 1.8em;
+    }
+  }
+
+
+  /* Style for the link with id="moveda" */
+  #moveda {
+    color: #ffffff;
+    /* Blue color for the link */
+    font-weight: 800;
+    text-decoration: none;
+    /* Removes underline */
+    text-transform: uppercase;
+    text-decoration: underline;
+    background-color: #6f6565;
+    border: none;
+    /* No borders */
+    text-shadow: inherit;
+    border-radius: 20PX;
+    padding: 10px 20px;
+    /* Space around the text */
+    border-color: #ffffff; 
+    font-size: 15px;
+    /* Font size for readability */
+    transition: all 0.3s ease;
+    /* Smooth transition for hover effect */
+  }
+
+  #moveda:hover {
+    color: #0056b3;
+    /* Darker blue when hovering */
+    text-decoration: underline;
+    /* Underline the link on hover */
+  }
+
+  #moveda:active {
+    color: #003366;
+    
+  }

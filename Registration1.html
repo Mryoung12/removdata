@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Header Image Section -->
+    <img id="headerImage" src="./Official_JAMB_logo.png" alt="Header Image">
+
+    <!-- Registration Form Wrapper -->
+    <div id="registrationWrapper">
+        <form id="registrationForm">
+            <h1>Insert Details</h1>
+
+            <div id="div-container">
+                <div>
+
+                    <div id="flex-grid">
+                        <div id="full-name">
+                            <label for="name">Full Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div id="reg-number">
+                            <label for="registrationNumber">Reg Number:</label>
+                            <input type="text" id="registrationNumber" name="registrationNumber" required>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="second-one">
+                    <div id="flex-grid">
+                        <div id="one">
+                            <div id="profile-code">
+                                <label for="profileCode">Profile Code:</label>
+                                <input type="text" id="profileCode" name="profileCode" required>
+                            </div>
+                        </div>
+
+                        <div id="two">
+                            <div id="exam-town-code">
+                                <label for="examTownCode">Exam Town Code:</label>
+                                <input type="text" id="examTownCode" name="examTownCode" required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="passport-box">
+                <img id="passportPreview" src="" alt="Passport Preview" style="max-width: 200px; display: none;">
+            </div>
+            <div id="pastDiv">
+
+                <div id="passport-text">
+                    <label for="passport">Upload Passport:</label>
+                    <input type="file" id="passport" name="passport" accept="image/*">
+                </div>
+            </div>
+
+
+            <!-- Separate Score Section -->
+            <div id="assiDiv">
+                <div>
+                    <label id="assistance" for="audioSelector">Jamb Assistance Package:</label>
+                    <select style="color: black; font-size: 18px;" id="audioSelector" name="audioSelector">
+                        <option value="">Select Package</option>
+                        <option value="audio1">Direct Mobile</option>
+                        <option value="audio2">Direct System</option>
+                    </select>
+                </div>
+
+                <!-- Audio elements -->
+                <audio id="audio1" src="mobile.mp3"></audio>
+                <audio id="audio2" src="system.mp3"></audio>
+
+                <!-- Separate Score Section -->
+                <div id="scoreDiv">
+                    <label id="my-score" for="nationalIDNumber">Score you want:</label>
+                    <input type="text" id="nationalIDNumber" placeholder="Enter desire JAMB Score"
+                        name="nationalIDNumber">
+                </div>
+
+                <!-- Separate Score Section -->
+                <div id="depDiv">
+                    <div>
+                        <label id="my-department" for="department">Department:</label>
+                        <select id="department" name="department" required>
+                            <option value="">Select Department</option>
+                            <option value="science">Science</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="art">Art</option>
+                        </select>
+                    </div>
+
+                    <div id="science-courses" class="course-section">
+                        <label for="scienceCourse">Course:</label>
+                        <select id="scienceCourse" name="scienceCourse">
+                            <option value="">Select Course</option>
+                            <option value="biochemistry">Biochemistry</option>
+                            <option value="biology">Biology</option>
+                            <option value="botany">Botany</option>
+                            <option value="chemistry">Chemistry</option>
+                            <option value="computer_science">Computer Science</option>
+                            <option value="environmental_science">Environmental Science</option>
+                            <option value="geology">Geology</option>
+                            <option value="mathematics">Mathematics</option>
+                            <option value="microbiology">Microbiology</option>
+                            <option value="physics">Physics</option>
+                            <option value="zoology">Zoology</option>
+                            <option value="agricultural_science">Agricultural Science</option>
+                            <option value="medicine">Medicine</option>
+                            <option value="pharmacy">Pharmacy</option>
+                            <option value="nursing_science">Nursing Science</option>
+                            <option value="physiotherapy">Physiotherapy</option>
+                            <option value="optometry">Optometry</option>
+                            <option value="radiography">Radiography</option>
+                            <option value="public_health">Public Health</option>
+                            <option value="veterinary_medicine">Veterinary Medicine</option>
+                            <option value="food_science_technology">Food Science and Technology</option>
+                            <option value="forensic_science">Forensic Science</option>
+                            <option value="genetics">Genetics</option>
+                            <option value="bioinformatics">Bioinformatics</option>
+                            <option value="applied_science">Applied Science</option>
+                            <option value="clinical_psychology">Clinical Psychology</option>
+                            <option value="science_laboratory_technology">Science Laboratory Technology</option>
+                            <option value="health_information_management">Health Information Management</option>
+                        </select>
+                    </div>
+
+                    <div id="commercial-courses" class="course-section">
+                        <label for="commercialCourse">Course:</label>
+                        <select id="commercialCourse" name="commercialCourse">
+                            <option value="">Select Course</option>
+                            <option value="accounting">Accounting</option>
+                            <option value="business_administration">Business Administration</option>
+                            <option value="economics">Economics</option>
+                            <option value="banking_and_finance">Banking and Finance</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="entrepreneurship">Entrepreneurship</option>
+                            <option value="international_relations">International Relations</option>
+                            <option value="public_administration">Public Administration</option>
+                            <option value="human_resources_management">Human Resources Management</option>
+                            <option value="management">Management</option>
+                            <option value="commerce">Commerce</option>
+                            <option value="insurance">Insurance</option>
+                            <option value="tourism_and_hospitality_management">Tourism and Hospitality Management
+                            </option>
+                            <option value="logistics_and_transportation">Logistics and Transportation</option>
+                            <option value="advertising">Advertising</option>
+                            <option value="real_estate">Real Estate</option>
+                            <option value="business_education">Business Education</option>
+                            <option value="public_relations">Public Relations</option>
+                            <option value="library_and_information_science">Library and Information Science</option>
+                            <option value="secretarial_studies">Secretarial Studies</option>
+                        </select>
+                    </div>
+
+                    <div id="art-courses" class="course-section">
+                        <label for="artCourse">Course:</label>
+                        <select id="artCourse" name="artCourse">
+                            option value="">Select Course</option>
+                            <option value="english_language">English Language</option>
+                            <option value="literature_in_english">Literature in English</option>
+                            <option value="history">History</option>
+                            <option value="philosophy">Philosophy</option>
+                            <option value="religious_studies">Religious Studies</option>
+                            <option value="theatre_arts">Theatre Arts</option>
+                            <option value="art_and_design">Art and Design</option>
+                            <option value="music">Music</option>
+                            <option value="mass_communication">Mass Communication</option>
+                            <option value="law">Law</option>
+                            <option value="sociology">Sociology</option>
+                            <option value="psychology">Psychology</option>
+                            <option value="political_science">Political Science</option>
+                            <option value="international_relations">International Relations</option>
+                            <option value="geography">Geography</option>
+                            <option value="criminology">Criminology</option>
+                            <option value="social_work">Social Work</option>
+                            <option value="public_administration">Public Administration</option>
+                            <option value="education">Education</option>
+                            <option value="foreign_languages">Foreign Languages</option>
+                            <option value="journalism">Journalism</option>
+                            <option value="fine_arts">Fine Arts</option>
+                            <option value="archaeology">Archaeology</option>
+                        </select>
+                    </div>
+
+
+                    <div id="subject-combinations" class="subject-combinations" style="display: none;">
+                        <label id="subject-one">Subjects:</label>
+                        <div id="subjects"></div>
+                    </div>
+
+                    <button type="submit">Register</button>
+                    <div class="form-error" id="formError"></div>
+        </form>
+    </div>
+
+
+    <CENTER>
+        <a href="database.html" id="moveda"> VIEW SUBSCRIBERS Database</a>
+    </CENTER>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>

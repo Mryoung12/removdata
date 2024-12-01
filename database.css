@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif; /* Digital clock-style font */
+  background-color: #000;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-container {
+  margin: 20px;
+  border: 2px solid #004080;
+  padding: 10px;
+  width: 80%;
+  background-color: #001a33;
+  box-shadow: 0px 0px 10px 2px #004080;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 10px;
+}
+
+#userGrid {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for cards */
+  gap: 20px;
+}
+
+.user-card {
+  display: flex;
+  background-color: #00264d;
+  border: 1px solid #004080;
+  border-radius: 5px;
+  padding: 10px;
+  align-items: flex-start;
+  color: #ffffff;
+  box-shadow: 0px 0px 5px 1px #004080;
+}
+
+.user-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* Makes the image round */
+  border: 2px solid #004080; /* Optional border for aesthetics */
+  object-fit: cover; /* Ensures the image fits within the circle */
+  margin-right: 20px;
+}
+
+.user-info {
+  flex: 1;
+}
+
+.user-info label {
+  display: block;
+  font-size: 14px;
+  margin: 5px 0 2px;
+  color: #00ccff;
+}
+
+.user-info input {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #004080;
+  border-radius: 4px;
+  background-color: #001a33;
+  color: white;
+  font-size: 14px;
+  pointer-events: none; /* Prevents user interaction */
+  cursor: not-allowed; /* Changes the cursor to indicate the field is non-editable */
+}
+
+input[readonly] {
+  background-color: #003366; /* Slightly darker background for read-only fields */
+  color: #999; /* Optional: Lighten the text color for a "disabled" effect */
+}
+
+footer {
+  margin-top: 20px;
+  color: #666;
+  font-size: 12px;
+  text-align: center;
+}
+
+button {
+  background-color: #7b0b0b; /* Green background */
+  color: white; /* White text */
+  border: none; /* No borders */
+  padding: 10px 20px; /* Space around the text */
+  text-align: center; /* Center the text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Align with other elements */
+  font-size: 16px; /* Text size */
+  cursor: pointer; /* Pointer cursor on hover */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+button:hover {
+  background-color: #00c4fc; /* Darker green when hovered */
+}
+
+a {
+  color: white; /* White text for the link */
+  text-decoration: none; /* Remove underline from the link */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover for the link */
+}
